@@ -122,19 +122,19 @@ const icons = document.querySelectorAll('.social-icons a');
             navLinks.classList.remove('active');
         });
 
-gsap.from(".nav-links", {rotation: 360,
-    x: '100vw',
-    xPercent: -100,
-    duration: 2, 
-    yoyo: true, 
-})
-gsap.from(".name", {rotation: 360,
-    x: '-100vw',
-    xPercent: -100,
-    duration: 2, 
-    yoyo: true, 
-})
-
+  gsap.from(".nav-links", {
+            opacity: 0, 
+            duration: 9, 
+            ease: "power1.out",
+            yoyo: true
+        });
+        
+        gsap.from(".name", {
+            opacity: 0, 
+            duration: 9, 
+            ease: "power1.out",
+            yoyo: true
+        });
 
 const tl = gsap.timeline();
 tl.add(() => {}, "+=2.2");
