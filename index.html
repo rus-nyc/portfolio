@@ -1,72 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <div class="name">Evgenia Kobyzeva</div>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="item" href="#header">Home</a></li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#services">Services</a></li>
+                <li><a class="item" href="#portfolio">Portfolio</a></li>
+                <li><a class="item" href="#contact">Contact</a></li>
+                <li class="close"><span>&times;</span></li>
+            </ul>
+           
+        </nav>
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1><span>Hi, I'm Evgenia</span><br> From New York</h1>
         </div>
-      </div>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+   </div>
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlY2hub2xvZ3l8ZW58MHwxfDB8fHww">
+            </div>
+            <div class="about-col-2">
+                <h1 class="one">About Me</h1>
+                <p>Hi there! I'm Evgenia, a passionate web developer with a keen interest in crafting user-friendly and visually appealing websites. 
+                With 2 years of experience in the field, I've had the privilege of working on a diverse range of projects, each presenting its own set of challenges and opportunities for growth.
+                Over time, I've honed my skills in front-end and back-end development, mastering languages like HTML, CSS, JavaScript, and various framework and librarie such as React.
+                When I'm not coding, you'll often find me exploring new technologies, contributing to open-source projects, or simply enjoying a good cup of tea while brainstorming ideas for my next project.
+                I'm passionate about leveraging technology to make a positive impact, and I'm excited about the endless possibilities that lie ahead in the world of web development.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link">Skills</p>
+                <p class="tab-links">Experience</p>
+                <p class="tab-links">Education</p>
+            </div>
+            <div class="tab-contents" id="skills">
+                <ul>
+                    <li><span>HTML/CSS</span></li>
+                    <li><span>JavaScript</span></li>
+                    <li><span>Bootstrap</span></li>
+                    <li><span>GSAP</span></li>
+                    <li><span>Figma</span></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2022 - current</span><br>Freelace</li>
+                    <li><span>2018 - current</span><br>Social Media Manager</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Certificate 2022</span><br>Front-end Web Development(HTML5, CSS3, JavaScript)</li>
+                    <li><span>Certificate 2022</span><br>GSAP, Figma</li>
+                    <li><span>Certificate 2022</span><br>Bootstrap</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Development</h2>
+                <p>Creating the visual elements of a website that users interact with, such as HTML, CSS, and JavaScript. 
+                  This involves ensuring a seamless user experience and compatibility across different browsers and devices.</p>
+                  <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>Responsive Design</h2>
+                <p>Developing websites that adapt and display properly on various devices and screen sizes, 
+                   including desktops, laptops, tablets, and smartphones.</p>
+                  <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Animation and Interaction Design</h2>
+                <p>Adding animations, transitions, and interactive elements to enhance user engagement and delight.
+                   This includes using CSS animations, JavaScript libraries (e.g., GreenSock Animation Platform - GSAP).</p>
+                  <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+   </div>
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/m.jpg?v=1712719490712">
+                <div class="layer">
+                    <h3>Meditation App</h3>
+                    <p>Explore a diverse library of meditation music tracks carefully curated to induce relaxation,
+                       reduce stress, and enhance focus during meditation sessions.This website was build using HTML,CSS ans JavaScript.</p>
+                       <a href="https://meditation-333.glitch.me"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/ar.jpg?v=1712719514068">
+                <div class="layer">
+                    <h3>Aroma Time</h3>
+                    <p>Welcome to Aroma EK. This website was crafted using HTML, CSS, Bootstrap and JavaScript.
+                     It serves as your one-stop destination for all-natural aroma oils, diffusers, and handmade soaps, meticulously crafted with love and care.</p>
+                       <a href="https://aroma-time-by-ek.glitch.me"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/w.jpg?v=1712719506652">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>Welcome to my  WeatherApp, your personalized weather companion built with HTML, CSS, and JavaScript.
+                        Easily switch between locations or enter a specific city to view weather forecasts for
+                        different areas, making it convenient for travelers or those with diverse geographical interests.
+                    </p>
+                       <a href="https://weather-animation-dream.glitch.me"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://cdn.glitch.global/10a4e74b-465f-456e-bd99-a36c6517f0aa/q.jpg?v=1712719498536">
+                <div class="layer">
+                    <h3>Brain Storm</h3>
+                    <p>QuizGame, an engaging quiz application built with JavaScript,HTML and CSS.
+                     Test your knowledge, challenge your friends, and have fun with a variety of quizzes covering diverse topics.
+                     Enjoy a seamless quiz experience across devices, including desktops, laptops, tablets, and smartphones, thanks to the app's responsive design and cross-platform compatibility.
+                    </p>
+                       <a href="https://quizappek.glitch.me"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Select more</a>
+    </div>
+   </div>
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> evgeniakobyzeva@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 7189155318</p>
+            <div class="social-icons">
+                <a href="www.linkedin.com/in/evgenia-kobyzeva-2bbbb0195"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Evgenia.pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Evgenia.</p>
+
+    </div>
+   </div>
+    
+
+
+
+
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/dc7de0362b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
 </html>
