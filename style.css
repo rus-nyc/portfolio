@@ -354,10 +354,7 @@ form .btn2{
     .nav-links.active li {
         display: block; 
     }
-    .header-text {
-       margin-top: 140%;
-       font-size: 18px;
-    }
+
     .header-text h1{
         font-size: 35px;
     }
@@ -383,7 +380,7 @@ form .btn2{
 }
 @media screen and (max-width: 600px){
     .header-text {
-        margin-top: 150%;
+        margin-top: 160%;
         font-size: 18px;
      }
      .header-text h1{
