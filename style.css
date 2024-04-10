@@ -258,9 +258,6 @@ overflow: hidden;
     display: inline-block;
     background:linear-gradient(45deg, #DF8908 10%, #B415ff 100%);
 }
-
-
-
 .contact-right form{
     width: 100%;
 }
@@ -383,8 +380,6 @@ form .btn2{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-   
-   
 }
 @media screen and (max-width: 600px){
     .header-text {
