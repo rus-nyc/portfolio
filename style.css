@@ -380,7 +380,7 @@ form .btn2{
 }
 @media screen and (max-width: 600px){
     .header-text {
-        margin-top: 110%;
+        margin-top: 100%;
         font-size: 18px;
      }
      .header-text h1{
